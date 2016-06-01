@@ -3,14 +3,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<style type="text/css">
-body{text-align: center}
-</style>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>查询吉他</title>
 </head>
 <body bgcolor="#8B636C">
-	<p align="center"><font color='white'>请输入您想要查询的吉他属性</font></p>
+	<p ><font color='white'>请输入您想要查询的吉他属性</font></p>
 	<form method="get"action="SearchServlet">
 		<label><font color='white'>生产商：</font></label><input type="text" name="builder"><br/> 
 		<br> <label><font color='white'>模&emsp;型：</font></label><input type="text" name="model"><br/> 

@@ -18,18 +18,18 @@
 <font color='white'>查询结果：</font>
 <table style="text-align:center ;" border="0" bgcolor="#FFF5EE">
 <br>
-		<thead>
-			<tr>
-				<th style="width:80px;">产品序号</th>
-				<th style="width:80px;">产品价格</th>
-				<th style="width:80px;">制造商家</th>
-				<th style="width:80px;">产品模型</th>
-				<th style="width:80px;">产品种类</th>
-				<th style="width:80px;">吉他前木</th>
-				<th style=";width:80px;">吉他后木</th>
-			</tr>
-		</thead>
-		<tbody>
+<thead>
+<tr>
+<th style="width:80px;">产品序号</th>
+<th style="width:80px;">产品价格</th>
+<th style="width:80px;">制造商家</th>
+<th style="width:80px;">产品模型</th>
+<th style="width:80px;">产品种类</th>
+<th style="width:80px;">吉他前木</th>
+<th style=";width:80px;">吉他后木</th>
+</tr>
+</thead>
+<tbody>
 	<% 
 		Inventory inventory = new Inventory();
 		inventory = (Inventory)request.getAttribute("result");
@@ -48,16 +48,10 @@
 		 <td><%=guitar.getGuitarSpec().getType() %></td>
 		  <td><%=guitar.getGuitarSpec().getBackWood() %> </td>
 		 <td> <%=guitar.getGuitarSpec().getTopWood() %> </td> </tr>
-		 <%
-			}
-		%>	
-		 <%
-		}else{
-		%>
+		 <%}%>	
+		 <%}else{%>
 		<font color='white'>您查询的结果不存在，请核实后重新查找！</font>
-		<% 	
-		}
-	%>
+		<% 	}%>
 	</tbody>
 </table>
 </body>
